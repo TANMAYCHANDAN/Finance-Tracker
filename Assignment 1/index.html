@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="images/logo.svg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Boston - The Ultimate City View Experience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="https://viewboston.com/"> <img src="/images/logo.svg" alt="View Boston Logo"> </a>
+            <h1>View Boston</h1>
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#experience">Experience</a>
+            <a href="#tickets">Tickets</a>
+            <a href="#visiting">Plan Your Visit</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h2>Boston's Ultimate View</h2>
+            <p>Experience breathtaking 360° views from Boston's highest observation deck</p>
+            <video controls width="100%">
+                <source src="/Audio&Video/video1.mp4" type="video/mp4">
+                Your browser doesn't support video playback.
+            </video>
+        </section>
+
+        <section id="experience">
+            <h2>The View Boston Experience</h2>
+            <div class="features-grid">
+                <article class="feature">
+                    <figure>
+                        <img src="/images/indoor.jpg" alt="Indoor Observation Deck">
+                        <figcaption>Indoor Experience</figcaption>
+                    </figure>
+                    <p>Experience full Boston prototype</p>
+                    <audio controls>
+                        <source src="/Audio&Video/audio1.mp4" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </article>
+
+                <article class="feature">
+                    <figure>
+                        <img src="/images/Boston-365-Frame_updated.jpg" alt="Outdoor Deck">
+                        <figcaption>360 View Deck</figcaption>
+                    </figure>
+                    <p>Enjoy the 360 view at our outdoor area</p>
+                    <audio controls>
+                        <source src="/Audio&Video/audio2.mp4" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </article>
+                
+            </div>
+        </section>
+
+        <section id="tickets">
+            <h2>Ticket Options</h2>
+            <table>
+                <tr>
+                    <th>Ticket Type</th>
+                    <th>Price</th>
+                    <th>Includes</th>
+                </tr>
+                <tr>
+                    <td>General Admission</td>
+                    <td>$24</td>
+                    <td>Access to all viewing areas</td>
+                </tr>
+                <tr>
+                    <td>Student</td>
+                    <td>$20</td>
+                    <td>Valid student ID required</td>
+                </tr>
+                <tr>
+                    <td>Child (3-12)</td>
+                    <td>$15</td>
+                    <td>Under 3 free</td>
+                </tr>
+            </table>
+
+            <form class="ticket-form">
+                <h3>Book Your Visit</h3>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="visit-date">Select Visit Date:</label>
+                    <input list="dates" id="visit-date">
+                    <datalist id="dates">
+                        <option value="Today">
+                        <option value="Tomorrow">
+                        <option value="This Weekend">
+                        <option value="Next Week">
+                    </datalist>
+                </div>
+
+                <div class="button-container">
+                    <button type="submit">Book Now</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="visiting">
+            <h2>Plan Your Visit</h2>
+            <details>
+                <summary>Opening Hours</summary>
+                <p>Open daily: 10:00 AM - 10:00 PM</p>
+                <p>Last entry: 9:00 PM</p>
+            </details>
+            <details>
+                <summary>Location & Directions</summary>
+                <p>Located at Prudential Tower</p>
+                <p>800 Boylston Street, Boston, MA 02199</p>
+            </details>
+        </section>
+    </main>
+
+    <!--<section class="special-offers">
+        <h3>Special Offers</h3>
+        <ul>
+            <li>Sunset Package: Save 20% on evening visits</li>
+            <li>Group Discount: 15% off for groups of 10+</li>
+            <li>Family Package: Kids visit free on weekends</li>
+        </ul>
+    </>
+    -->
+
+    <div class="floating-discount">
+        <aside>
+            <p>Limited Time Offer: 20% Off!</p>
+        </aside>
+    </div>
+
+    <footer>
+        <div id="contact" class="contact">
+            <h3>Contact Us</h3>
+            <a href="tel:+18576060707">Phone: (617) 606-0707</a>
+            <a href="mailto:info@viewboston.com">Email: info@viewboston.com</a>
+        </div>
+        <p class="copyright">© 2025 View Boston. All rights reserved.</p>
+    </footer>
+</body>
+</html>
